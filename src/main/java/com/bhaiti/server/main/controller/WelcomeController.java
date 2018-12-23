@@ -1,4 +1,7 @@
 package com.bhaiti.server.main.controller;
+import java.util.Date;
+import java.util.HashMap;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -24,4 +27,12 @@ private static final String welcomemsg = "Welcome Mr. %s!";
     	
         return   p;
     }
+    
+    @GetMapping("/server/time")
+    @ResponseBody
+    public HashMap<String, Date> getServerTime() {
+    	HashMap<String, Date> res=new HashMap<String,Date>();res.put("Server date ", new Date());
+        return  res ;
+    }
+    
 }
