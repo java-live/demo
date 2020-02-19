@@ -1,10 +1,9 @@
 package com.bhaiti.server.main;
 
 public class Person {
-String name;
+String name;//hello
 int age;
-public Person() {
-	super();
+public Person() {super();
 	
 }
 public String getName() {
