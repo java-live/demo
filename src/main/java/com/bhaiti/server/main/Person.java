@@ -5,7 +5,7 @@ String name;
 int age;
 public Person() {
 	super();
-	// TODO Auto-generated constructor stub
+	
 }
 public String getName() {
 	return name;
